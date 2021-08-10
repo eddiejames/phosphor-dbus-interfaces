@@ -1,0 +1,21 @@
+description: >
+  Implementation of USB controller status.
+
+properties:
+  - name: Status
+      type: enum[self.State]
+      default: Enabled
+      description: >
+        The current state of the USB controller.
+
+enumerations:
+    - name: State
+      description: >
+        Identifies if the USB controller is enabled or not.
+      values:
+        - name: Enabled
+          description: >
+            The USB controller is enabled.
+        - name: Disabled
+          description: >
+            The USB controller is disabled.
